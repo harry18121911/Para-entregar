@@ -45,14 +45,3 @@ function copiar(){
   alert("Texto copiado")
 }
 
-function inputverificar() {
-  var inputPalabra = document.querySelector("#input-texto");
-  inputPalabra.addEventListener("keypress", function (e) {
-    var keyCode = (e.keyCode ? e.keyCode : e.which);
-
-    if (keyCode > 47 && keyCode < 65) {
-      e.preventDefault();
-    }
-  });
-}
-
